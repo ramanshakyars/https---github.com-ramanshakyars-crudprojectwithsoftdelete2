@@ -1,0 +1,13 @@
+.example-full-width{
+    width: 250px;
+    /* gap: 20px; */
+    padding: 5px;
+}
+h2{
+    height: 50px;
+    background-color: #ff751a;
+    text-align: center;
+    color: whitesmoke;
+    position: relative;
+    top: 0px;
+}

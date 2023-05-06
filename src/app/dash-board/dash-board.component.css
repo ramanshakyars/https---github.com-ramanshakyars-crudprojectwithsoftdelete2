@@ -1,0 +1,57 @@
+.entry{
+    width: 100%;
+}
+table,th,td{
+   
+    border: 1px solid black;
+    text-align: center;
+font-size: large;
+  }
+  table{
+    width: 100%;
+  }
+  .example-container {
+    width:100% ;
+    height:90%;
+   
+  }
+  
+  .example-sidenav-content {
+   
+    height: 90%;
+    
+  }
+  
+  #sidenav {
+    /* padding: 110px; */
+    width: 200px;
+   
+  }
+  .container-fluid{
+    background-color: #ff751a;
+    height: 70px;
+  }
+  #add{
+    height: 40px;
+    width: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    text-align: center;
+
+
+  }
+  h1{
+    color: whitesmoke;
+    position: relative;
+    top: 10px;
+  }
+  .action{
+    gap: 50px;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    /* padding: 30px; */
+  }
+ 
+  

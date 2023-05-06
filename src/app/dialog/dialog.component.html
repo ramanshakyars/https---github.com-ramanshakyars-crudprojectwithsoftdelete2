@@ -1,0 +1,61 @@
+<mat-card class="adduser">
+    <mat-card-content>
+        <h2>Customer Details</h2>
+        <mat-dialog-content>
+            <form [formGroup]="userForm">
+
+
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Custumar Name</mat-label>
+                    <input matInput formControlName="name" type="text" required>
+                    <mat-icon matTextSuffix>person</mat-icon>
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email" type="email" required>
+                    <mat-icon matTextSuffix>email</mat-icon>
+                </mat-form-field>
+
+
+
+                <p>
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Mobile Number</mat-label>
+                        <input matInput formControlName="mobile" type="number" required>
+                        <mat-icon matTextSuffix>phone</mat-icon>
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Gender</mat-label>
+                        <mat-select formControlName="gender" required>
+                            <mat-option value="Male">Male <mat-icon>male</mat-icon></mat-option>
+                            <mat-option value="Female">Female <mat-icon>female</mat-icon></mat-option>
+                        </mat-select>
+                        <mat-icon matTextSuffix>gender</mat-icon>
+                    </mat-form-field>
+                </p>
+
+                <p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Date of birth</mat-label>
+                        <input matInput [matDatepicker]="picker" formControlName="dob" required>
+                        <mat-hint>Please Choose From Calender</mat-hint>
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Address</mat-label>
+                        <input matInput placeholder="Placeholder" formControlName="address" required>
+                        <mat-icon matSuffix>place</mat-icon>
+                        <mat-hint>please mention house no.</mat-hint>
+                    </mat-form-field>
+                </p>
+                <mat-dialog-actions>
+                    <button mat-raised-button color="primary" (click)="saveData()"
+                        [disabled]="!userForm.valid">Submit</button>
+                    <button mat-raised-button color="warn" mat-dialog-close>cancel</button>
+                </mat-dialog-actions>
+            </form>
+        </mat-dialog-content>
+    </mat-card-content>
+</mat-card>
